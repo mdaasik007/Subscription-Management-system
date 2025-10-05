@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Manager</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <h1 class="heading"><b>Subscription Manager</b></h1>
+    <div class="max-w-5xl mx-auto p-1" id="main-container">
+      <form
+        class="grid grid-cols-1 md:grid-cols-6 gap-4 mb-6 bg-width p-4 rounded-xl form"
+      >
+        <input type="text" placeholder="Service name" id="txt" class="name" required />
+        <input type="number" placeholder="Price" id="Num" class="price" />
+        <select required class="cycle">
+          <option value="Monthly">Monthly</option>
+          <option value="Yearly">Yearly</option>
+        </select>
+        <input type="date" id="date" class="date" />
+        <select id="category" class="category" required>
+          <option value="Entertinment">Entertinment</option>
+          <option value="Work">Work</option>
+          <option value="skill">skill</option>
+          <option value="Sports">Sports</option>
+          <option value="gym">Gym</option>
+        </select>
+        <button
+          type="submit"
+          class="bg-blue-600 text-white rounded-lg p-2 hover:bg-blue-700 transition"
+        >
+          Add
+        </button>
+      </form>
+      </div>
+      <div class="flex justify-end mb-4 max-w-5xl mx-auto p-6" id="sort-container">
+        <select  id="sort" class="sort">
+          <option value="default">Sort by</option>
+          <option value="Name">Name</option>
+          <option value="Price">Price</option>
+          <option value="Renewal Date">Renewal Date</option>
+        </select>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md max-w-5xl mx-auto p-6 " id="result-container">
+        <h2 class="text-xl font-semibold mb-4">Your Subscriptions</h2>
+      <div class="list space-y-4"></div>
+      <div class="summary font-bold" id="total">Total Monthly Spend: <span class="amount text-blue-600">0</span></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
