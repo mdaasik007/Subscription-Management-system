@@ -161,6 +161,6 @@ See the [LICENSE](LICENSE) file for details.
 ## 👨‍💻 Author
 
 **Mohammed Aasik**
-📧 [your.email@example.com](mailto:aasikflipper@example.com)
-🌐 [Your Portfolio or GitHub Profile](https://github.com/mdaasik007)
+📧 [mailto:aasikflipper@example.com]
+🌐 [https://github.com/mdaasik007]
 
